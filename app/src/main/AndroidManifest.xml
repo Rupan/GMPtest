@@ -11,8 +11,8 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="http" android:host="gmplib.org"/>
-        <data android:scheme="https" android:host="gmplib.org"/>
+        <data android:scheme="http" android:host="github.com" android:pathPrefix="/Rupan/GMPtest"/>
+        <data android:scheme="https" android:host="github.com" android:pathPrefix="/Rupan/GMPtest"/>
       </intent-filter>
     </activity>
     <meta-data

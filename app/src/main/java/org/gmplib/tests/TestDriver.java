@@ -58,8 +58,8 @@ public class TestDriver extends Activity {
 
     public Action getIndexApiAction() {
         Thing object = new Thing.Builder()
-                .setName("GMP Library")
-                .setUrl(Uri.parse("https://gmplib.org/"))
+                .setName("GMP test suite for Android")
+                .setUrl(Uri.parse("https://github.com/Rupan/GMPtest"))
                 .build();
         return new Action.Builder(Action.TYPE_VIEW)
                 .setObject(object)
