@@ -44,6 +44,10 @@ jint JNI_OnLoad(JavaVM *vm, void *reserved) {
         return JNI_ERR;
     }
     oom_error = (jclass) (*env)->NewGlobalRef(env, local_oom_error);
+    if(oom_error == NULL) {
+        __android_log_write(ANDROID_LOG_FATAL, TAG, "Could create global reference to OutOfMemoryError");
+        return JNI_ERR;
+    }
 
     return JNI_VERSION_1_6;
 }
